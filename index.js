@@ -8,4 +8,4 @@ const mongoose = require("mongoose");
 mongoose
   .connect(MONGO_URI, { useNewUrlParser: true})
   .then(() => server.start())
-  .catch(console.log);
+  .catch(console.log());
