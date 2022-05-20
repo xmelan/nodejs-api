@@ -5,7 +5,7 @@ class BaseRepository {
 
   async get(id) {
     return await this.model.findById(id);
-  } 
+  }
 
   async getAll() {
     return await this.model.find();
@@ -16,11 +16,12 @@ class BaseRepository {
   }
 
   async update(id, entity) {
-    return await this.model.findByIdAndUpdate(id, entity, {new: true});
+    return await this.model.findByIdAndUpdate(id, entity, { new: true });
   }
 
   async delete(id) {
-    return await this.model.findByIdAndDelete(id);
+    await this.model.findByIdAndDelete(id);
+    return true;
   }
 }
 
