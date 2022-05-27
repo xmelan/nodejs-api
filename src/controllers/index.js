@@ -3,4 +3,5 @@ module.exports = {
     UserController : require('../controllers/user.controller'),
     IdeaController : require('../controllers/idea.controller'),
     CommentController: require('../controllers/comment.controller'),
+    AuthController: require('../controllers/auth.controller'),
 }
